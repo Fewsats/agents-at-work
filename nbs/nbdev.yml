@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "agents-at-work"
+  site-url: "https://Fewsats.github.io/agents-at-work"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/Fewsats/agents-at-work"

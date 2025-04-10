@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TBBNZLL5WY">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TBBNZLL5WY');
+        </script>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <!-- SEO Meta Tags -->
+        <title>
+            What is an AI Agent? Experts Explain | Agents at Work Podcast
+        </title>
+        <meta content="Discover what AI agents are according to leading experts and innovators in the field. Real definitions from tech founders, researchers, and AI specialists featured on the Agents at Work podcast." name="description"/>
+        <meta content="AI agent definition, what is an AI agent, AI automation, agent technology, AI assistants, artificial intelligence agents" name="keywords"/>
+        <!-- Open Graph / Social Media Tags -->
+        <meta content="What is an AI Agent? Experts Explain | Agents at Work Podcast" property="og:title"/>
+        <meta content="Discover what AI agents are according to leading experts and innovators in the field." property="og:description"/>
+        <meta content="https://icons-8e9.pages.dev/agents-at-work-small.jpg" property="og:image"/>
+        <meta content="https://agents-at-work.dev/what-is-an-ai-agent" property="og:url"/>
+        <meta content="article" property="og:type"/>
+        <!-- Twitter Card Tags -->
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="What is an AI Agent? Experts Explain | Agents at Work Podcast" name="twitter:title"/>
+        <meta content="Discover what AI agents are according to leading experts and innovators in the field." name="twitter:description"/>
+        <meta content="https://icons-8e9.pages.dev/agents-at-work-small.jpg" name="twitter:image"/>
+        <!-- Favicon -->
+        <link href="https://icons-8e9.pages.dev/favicon.ico" rel="icon"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+        <style>
+            :root {
+            --bg-color: #1e2d4a;
+            --text-color: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --accent-color: #e15b42;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-image: url('https://icons-8e9.pages.dev/background.png');
+            background-repeat: repeat;
+            background-color: var(--bg-color);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .title-container {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-right: 0.5rem;
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 0;
+        }
+        
+        .page-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .logo {
+            width: 240px;
+            height: 240px;
+            border-radius: 12px;
+            margin: 0 auto 2rem;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .definitions {
+            margin-top: 3rem;
+        }
+        
+        .definition-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .definition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .definition-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            display: inline;
+            margin-right: 0.5rem;
+        }
+        
+        .definition-card .role {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+        
+        .definition-card .meta {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .watch-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        
+        .watch-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .watch-link span {
+            margin-right: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .youtube-icon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+        
+        .definition-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-top: 1rem;
+        }
+        
+        .cta {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+        
+        .cta h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #c44a33;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+        
+        footer p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--border-color);
+            transition: color 0.2s ease;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .definition-card {
+                padding: 1.2rem;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+            
+            /* Hide "Watch on" text on small screens */
+            /* .watch-link span {
+                display: none;
+            } */
+            
+            /* Make role appear on a new line */
+            .definition-card .meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .definition-card .role {
+                display: block;
+                margin-top: 0.3rem;
+            }
+            
+            .watch-link {
+                margin-top: 0.8rem;
+            }
+        }
+        
+        /* Clean, simplified link styling */
+        .person-link, .company-link {
+            color: inherit !important;
+            text-decoration: none;
+            transition: filter 0.2s ease, text-decoration 0.2s ease;
+        }
+        
+        .person-link:hover, .company-link:hover {
+            text-decoration: underline;
+            filter: brightness(1.2);
+        }
+        
+        /* Make links inside h2 and role match parent text color */
+        .definition-card h2 a {
+            color: var(--accent-color) !important;
+            text-decoration: none;
+            transition: filter 0.2s ease, text-decoration 0.2s ease;
+        }
+        
+        .definition-card .role a {
+            color: var(--text-secondary) !important;
+            text-decoration: none;
+            transition: filter 0.2s ease, text-decoration 0.2s ease;
+        }
+        
+        .definition-card h2 a:hover,
+        .definition-card .role a:hover {
+            text-decoration: underline;
+            filter: brightness(1.2);
+        }
+        
+        /* Separate watch link styling */
+        .watch-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="page-header">
+                <a href="/">
+                    <img alt="Agents at Work Logo" class="logo" src="https://icons-8e9.pages.dev/agents-at-work-small.jpg"/>
+                </a>
+                <div class="title-container">
+                    <h1>
+                        What is an AI Agent?
+                    </h1>
+                    <h2>
+                        according to...
+                    </h2>
+                </div>
+                <!-- <p>Ask ten experts about AI agents and you'll get fifteen different answers! From digital assistants to autonomous systems, the definition shifts with every innovator we interview. After all, there are as many visions of AI automation as there are minds building the future...</p> -->
+            </header>
+            <div class="definitions">
+                <div class="definition-card consensus-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                Latest Consensus
+                            </h2>
+                            <span class="role">
+                                Synthesized from all experts
+                            </span>
+                        </div>
+                    </div>
+                    <p>
+                        AI agents are LLM-powered software systems that make autonomous decisions about which actions or tools to use to accomplish tasks, rather than following predetermined paths. They can plan, execute, and evaluate their work while interfacing with external systems and data, breaking complex goals into manageable steps. Fundamentally, they extend human capabilities by allowing delegation of tasks through natural language interaction rather than traditional interfaces.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/johnowhitaker" target="_blank">
+                                    Johnathan Whitaker
+                                </a>
+                            </h2>
+                            <span class="role">
+                                R&D @
+                                <a href="https://answer.ai" target="_blank">
+                                    Answer.ai
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/ZIZCfVZg91A?si=JlL0KykgA2_U3REZ" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An AI agent is something where the model itself dictates the program flow, making decisions about what actions to take next rather than following a predetermined path. It's a system where the model chooses between different possible actions or tools in a flexible structure that might be different for each query or run, as opposed to deterministic workflows with fixed steps.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/gethackteam" target="_blank">
+                                    Roy Derks
+                                </a>
+                            </h2>
+                            <span class="role">
+                                from
+                                <a href="https://ibm.co/38oNuY0" target="_blank">
+                                    IBM Data, AI & Automation
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/aywAuRlzB0M?si=MD7-PchL4P8ib4NY" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An AI agent is a piece of software that uses LLMs connected to tools and data, making them more deterministic by implementing logic on the tool side rather than on the agent itself. These single-purpose agents help users perform specific tasks like research, market analysis, or data extraction, with IBM focusing on providing ways to deploy and host these agents at scale.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/Aiswarya_Sankar" target="_blank">
+                                    Aiswarya Sankar
+                                </a>
+                            </h2>
+                            <span class="role">
+                                from
+                                <a href="https://www.entelligence.ai/" target="_blank">
+                                    Entelligence
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/L1jReB0Lc5M?si=m55u-Airmud75jgG" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An AI agent is something that can take an open-ended task, make a plan, run actions or tools, check its own work, and produce an output while potentially interfacing with humans. It involves decision-making, planning, and executing with a set of capabilities to achieve a specific goal or outcome.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/jooshmayer" target="_blank">
+                                    Josh Mayer
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Founding Team @
+                                <a href="https://tollbit.com" target="_blank">
+                                    Tollbit
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/nABCw3D0CoI?si=byuF0wmwbIaT6Rrr" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        Any application that uses an LLM. Josh believes the definition doesn't need to be complicated, and that there are already too many definitions out there, making it a "lost cause" to try to narrow it down further.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://www.linkedin.com/in/arjun-chintapalli" target="_blank">
+                                    Arjun Chintapalli
+                                </a>
+                                &
+                                <a href="https://www.linkedin.com/in/bhavani-kalisetty/" target="_blank">
+                                    Bhavani Kalisetty
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Founders @
+                                <a href="https://www.rtrvr.ai/" target="_blank">
+                                    rtrvr
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://www.youtube.com/watch?v=-40h0O6olus&t=1056s" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An agent is a layer framework around the underlying language model that can represent the current state and action space of the environment you're trying to get the LLM to interact with. It autonomously executes a goal, helping you achieve tasks by breaking them into planning and execution steps.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/thorstenball" target="_blank">
+                                    Thorsten Ball
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Software Engineer @
+                                <a href="https://sourcegraph.com/" target="_blank">
+                                    Sourcegraph
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/J1-W9O3n7j8?si=RkVd3QJBC-0Xy_vX" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An AI agent is a large language model with access to tools, meaning with the ability to modify something outside of its context window. It receives input, decides based on that input whether to use tools and which ones to use, then uses those tools and either waits for more input or completes the task.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/dzhng" target="_blank">
+                                    David Zhang
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Founder
+                                <a href="https://www.aomni.com/" target="_blank">
+                                    Aomni
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/-aBD8i2_mGM?si=D9F--6XsCGIc_K7a" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An AI agent is a piece of software that can accomplish high-level goals by figuring out long-tail use cases and working around roadblocks, similar to a self-driving car for software. From a UX perspective, it represents a new species of software that moves beyond traditional interfaces, allowing users to interact through chat or other modalities rather than clicking buttons and filling forms.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://www.linkedin.com/in/matt-wyman/" target="_blank">
+                                    Matthew Wyman
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Co-founder of
+                                <a href="https://okareo.com/" target="_blank">
+                                    Okareo
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/kTmUW86-HSE?si=G50nek0JsfHgDWR8" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        An agent is a set of multiple prompts and multiple non-deterministic interactions designed to generate directed user behavior. It involves adding non-deterministic complexity through a collection of prompts and models working together, going beyond just a single prompt to create more complex, purposeful systems.
+                    </p>
+                </div>
+                <div class="definition-card">
+                    <div class="meta">
+                        <div>
+                            <h2>
+                                <a href="https://x.com/AtlantisPleb" target="_blank">
+                                    Christopher David
+                                </a>
+                            </h2>
+                            <span class="role">
+                                Founder & CEO of
+                                <a href="https://openagents.com/" target="_blank">
+                                    Open Agents
+                                </a>
+                            </span>
+                        </div>
+                        <a class="watch-link" href="https://youtu.be/zC44sB9EWcw?si=5QFPJ9Q4YV8BHTQ8" target="_blank">
+                            <span>
+                                Watch on
+                            </span>
+                            <svg class="youtube-icon" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>
+                        A piece of software you can delegate tasks to, empowering and augmenting human agency rather than acting as a separate entity. These agents use LLMs and APIs to act in the world based on requests and can be easily replicated. They are fundamentally tools extending human capabilities under human direction.
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <p>
+                    <a href="/">
+                        Home
+                    </a>
+                    |
+                    <a href="https://x.com/Fewsats" target="_blank">
+                        Follow us on X
+                    </a>
+                    |
+                    <a href="https://discord.gg/2tPYBgWzQm" target="_blank">
+                        Join our Discord
+                    </a>
+                </p>
+                <p>
+                    © 2025 Agents at Work
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

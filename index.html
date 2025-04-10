@@ -166,29 +166,36 @@
             fill: currentColor;
         }
         
-        .guest-invite {
-            margin-top: 2.5rem;
-            font-size: 1rem;
-            color: var(--text-secondary);
-        }
-        
-        .guest-invite a {
-            color: var(--text-color);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--text-color);
-            transition: color 0.2s ease, border-color 0.2s ease;
-        }
-        
-        .guest-invite a:hover {
-            color: var(--accent-color);
-            border-color: var(--accent-color);
-        }
-        
         .copyright {
-            margin-top: 4rem;
+            margin-top: 1.5rem;
             font-size: 0.85rem;
             color: var(--text-secondary);
             opacity: 0.7;
+        }
+        
+        .footer-links {
+            margin-top: 3rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .footer-links p {
+            margin: 0;
+        }
+        
+        .text-link {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+            transition: border-color 0.2s ease;
+            font-size: 0.95rem;
+            padding-bottom: 2px;
+        }
+        
+        .text-link:hover {
+            border-bottom: 1px solid var(--text-color);
         }
         
         @media (max-width: 768px) {
@@ -202,6 +209,11 @@
             
             .social-links {
                 grid-template-columns: 1fr;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
         
@@ -250,7 +262,10 @@
             </a>
         </div>
         
-        <p class="guest-invite">Want to be a guest? <a href="https://x.com/positiveblue2" target="_blank">Send us a message on X</a></p>
+        <div class="footer-links">
+            <p><a href="/what-is-an-ai-agent.html" class="text-link">What is an AI Agent?</a></p>
+            <p>Want to be a guest? <a href="https://x.com/positiveblue2" target="_blank" class="text-link">Reach out</a></p>
+        </div>
         
         <p class="copyright">&copy; 2025 Agents at Work</p>
     </div>
